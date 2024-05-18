@@ -1,5 +1,7 @@
 <template>
-  <div>
-    <h1>Wongames Nuxt</h1>
-  </div>
+  <Main />
 </template>
+
+<script setup lang="ts">
+import Main from '@/components/Main/Main.vue';
+</script>
