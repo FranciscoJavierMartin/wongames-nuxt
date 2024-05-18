@@ -1,11 +1,12 @@
 // @vitest-environment nuxt
-import { renderSuspended } from '@nuxt/test-utils/runtime';
+import { screen, render } from '@testing-library/vue';
 import Main from './Main.vue';
-import { screen } from '@testing-library/vue';
 
 describe('<Main/>', () => {
   it('<Main />', async () => {
-    await renderSuspended(Main);
-    expect(screen.getByRole('heading', { name: /wongames/i })).toBeDefined();
+    render(Main);
+    expect(
+      screen.getByRole('heading', { name: /wongames/i }),
+    ).toBeInTheDocument();
   });
 });
