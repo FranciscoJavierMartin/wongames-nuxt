@@ -1,6 +1,4 @@
 !.storybook
 !.jest
-build
-coverage
-.nuxt
+generators
 node_modules
