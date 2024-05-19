@@ -13,9 +13,12 @@
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
     "test:unit": "vitest run",
-    "test": "vitest"
+    "test": "vitest",
+    "storybook": "storybook dev --port 6006 --no-open --disable-telemetry",
+    "build-storybook": "storybook build"
   },
   "dependencies": {
+    "@nuxtjs/storybook": "^8.0.0",
     "@nuxtjs/tailwindcss": "^6.12.0",
     "nuxt": "^3.11.2",
     "vue": "^3.4.27",
@@ -34,6 +37,17 @@
     "happy-dom": "^14.11.0",
     "prettier": "^3.2.5",
     "prettier-plugin-tailwindcss": "^0.5.14",
-    "vitest": "^1.6.0"
+    "vitest": "^1.6.0",
+    "storybook": "8.0.8",
+    "@types/node": "^18.17.5",
+    "@storybook/vue3": "8.0.8",
+    "@storybook-vue/nuxt": "0.2.6",
+    "@nuxtjs/storybook": "7.0.2",
+    "@storybook/addon-links": "8.0.8",
+    "@storybook/builder-vite": "8.0.8",
+    "@storybook/addon-essentials": "8.0.8",
+    "@storybook/addon-interactions": "8.0.8",
+    "@storybook/test": "8.0.8",
+    "@storybook/blocks": "8.0.8"
   }
 }
