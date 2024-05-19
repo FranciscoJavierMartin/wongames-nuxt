@@ -15,7 +15,8 @@
     "test:unit": "vitest run",
     "test": "vitest",
     "storybook": "storybook dev --port 6006 --no-open --disable-telemetry",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "template": "npx plop --plopfile generators/plopfile.cjs"
   },
   "dependencies": {
     "@nuxtjs/storybook": "^8.0.0",
