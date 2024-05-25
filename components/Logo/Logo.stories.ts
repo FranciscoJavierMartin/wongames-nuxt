@@ -13,3 +13,15 @@ export default meta;
 export const Default: StoryObj<typeof meta> = {
   args: {},
 };
+
+export const Black: StoryObj<typeof meta> = {
+  args: {
+    color: 'black',
+  },
+};
+
+export const White: StoryObj<typeof meta> = {
+  args: {
+    color: 'white',
+  },
+};
