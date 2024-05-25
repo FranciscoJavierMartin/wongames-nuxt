@@ -8,6 +8,8 @@
     :class="{
       'text-white': color === 'white',
       'text-black': color === 'black',
+      'h-[3.3rem] w-[11rem]': size === 'normal',
+      'h-[5.9rem] w-[20rem]': size === 'large',
     }"
   >
     <path
@@ -84,6 +86,10 @@ defineProps({
   color: {
     type: String as PropType<'white' | 'black'>,
     default: 'white',
+  },
+  size: {
+    type: String as PropType<'normal' | 'large'>,
+    default: 'normal',
   },
 });
 </script>
