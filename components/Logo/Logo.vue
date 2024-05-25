@@ -3,7 +3,8 @@
     xmlns="http://www.w3.org/2000/svg"
     fill="none"
     viewBox="0 0 158 48"
-    role="presentation"
+    role="img"
+    aria-label="Won Games"
     :class="{
       'text-white': color === 'white',
       'text-black': color === 'black',

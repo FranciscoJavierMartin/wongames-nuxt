@@ -3,8 +3,9 @@ import { screen, render } from '@testing-library/vue';
 import Logo from './Logo.vue';
 
 describe('<Logo/>', () => {
-  it('<Logo />', async () => {
+  it('should render a white label y default', async () => {
     render(Logo);
-    expect(screen.getByRole('presentation')).toBeInTheDocument();
+    expect(screen.getByLabelText(/Won Games/i)).toBeInTheDocument();
+    expect(screen.getByLabelText(/Won Games/i)).toHaveClass('text-white');
   });
 });
