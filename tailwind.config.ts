@@ -1,5 +1,5 @@
-import type {Config} from 'tailwindcss'
-import wongamesTheme from './assets/wongames-theme'
+import type { Config } from 'tailwindcss';
+import wongamesTheme from './assets/wongames-theme';
 
 export default {
   content: [
@@ -15,4 +15,4 @@ export default {
     extend: {},
   },
   plugins: [],
-};
+} satisfies Config;
