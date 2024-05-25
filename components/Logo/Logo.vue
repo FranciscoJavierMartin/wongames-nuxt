@@ -5,7 +5,6 @@
     viewBox="0 0 158 48"
     role="img"
     aria-label="Won Games"
-    class="max-md:p-small"
     :class="{
       'text-white': color === 'white',
       'text-black': color === 'black',
