@@ -29,4 +29,13 @@ describe('<Logo/>', () => {
       height: '33px',
     });
   });
+
+  it('should render a bigger logo when size is large', async () => {
+    render(Logo, { props: { size: 'large' } });
+
+    expect(screen.getByLabelText(/Won Games/i)).toHaveStyle({
+      width: '200px',
+      height: '59px',
+    });
+  });
 });
