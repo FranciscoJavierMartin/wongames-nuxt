@@ -1,7 +1,7 @@
 <template>
-  <Main />
+  <Logo />
 </template>
 
 <script setup lang="ts">
-import Main from '@/components/Main/Main.vue';
+import Logo from '@/components/Logo/Logo.vue';
 </script>
