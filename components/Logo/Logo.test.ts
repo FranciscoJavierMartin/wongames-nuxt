@@ -38,4 +38,12 @@ describe('<Logo/>', () => {
       height: '59px',
     });
   });
+
+  it('should render a bigger logo without text if hideOnMobile', async () => {
+    render(Logo, { props: { hideOnMobile: true } });
+
+    expect(screen.getByLabelText(/Won Games/i)).toHaveClass(
+      'max-md:w-[5.8rem]',
+    );
+  });
 });
