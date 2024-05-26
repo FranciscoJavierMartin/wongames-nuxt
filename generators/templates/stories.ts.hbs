@@ -1,0 +1,15 @@
+import type { Meta, StoryObj } from '@storybook/vue3';
+
+import {{pascalCase name}} from './{{pascalCase name}}.vue';
+
+const meta = {
+  title: '{{pascalCase name}}',
+  component: {{pascalCase name}},
+  tags: ['autodocs'],
+} satisfies Meta<typeof {{pascalCase name}}>;
+
+export default meta;
+
+export const Default: StoryObj<typeof meta> = {
+  args: {},
+};

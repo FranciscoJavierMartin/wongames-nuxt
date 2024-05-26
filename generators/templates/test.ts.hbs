@@ -1,0 +1,12 @@
+// @vitest-environment nuxt
+import { screen, render } from '@testing-library/vue';
+import {{pascalCase name}} from './{{pascalCase name}}.vue';
+
+describe('<{{pascalCase name}}/>', () => {
+  it('<{{pascalCase name}} />', async () => {
+    render({{pascalCase name}});
+    expect(
+      screen.getByRole('heading', { name: /wongames/i }),
+    ).toBeInTheDocument();
+  });
+});
