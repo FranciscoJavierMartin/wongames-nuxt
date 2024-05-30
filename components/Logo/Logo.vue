@@ -20,20 +20,20 @@
     />
     <path
       fill="#110F28"
-      fillOpacity=".15"
+      fill-opacity=".15"
       d="M30.16 27.16l-6.03-4.3a.5.5 0 00-.78.5l1.3 7.3 5.51-3.5z"
     />
     <path
       stroke="#fff"
-      strokeLinecap="round"
-      strokeOpacity=".4"
-      strokeWidth="1.5"
+      stroke-linecap="round"
+      stroke-opacity=".4"
+      stroke-width="1.5"
       d="M7.6 7.1c-5.12 2.76-4.53 5-4.53 7.5M57.27 26.1v1M3.05 18.1v2M57.27 30.1v5"
     />
     <path
       stroke="#0A0D27"
-      strokeLinecap="round"
-      strokeWidth="2"
+      stroke-linecap="round"
+      stroke-width="2"
       d="M13.05 15.1v6M10.04 18.1h6.02"
     />
     <ellipse
@@ -72,11 +72,11 @@
         x2="30.15"
         y1="-7.4"
         y2="49.1"
-        gradientUnits="userSpaceOnUse"
+        gradient-units="userSpaceOnUse"
       >
-        <stop stopColor="#FF5F5F" />
-        <stop offset="1" stopColor="#F062C0" />
-        <stop offset="1" stopColor="#F23131" />
+        <stop stop-color="#FF5F5F" />
+        <stop offset="1" stop-color="#F062C0" />
+        <stop offset="1" stop-color="#F23131" />
       </linearGradient>
     </defs>
   </svg>
