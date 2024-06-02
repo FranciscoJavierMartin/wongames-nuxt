@@ -9,6 +9,29 @@ const meta = {
   args: {
     text: 'Hello world',
   },
+  argTypes: {
+    text: {
+      control: 'text',
+      defaultValue: 'Hello world',
+      description: 'Text to show',
+    },
+    color: {
+      options: ['white', 'black'],
+      control: { type: 'radio' },
+      defaultValue: 'black',
+      description: 'Text color',
+    },
+    lineLeft: {
+      type: 'boolean',
+      defaultValue: false,
+      description: 'Add line to left',
+    },
+    lineBottom: {
+      type: 'boolean',
+      defaultValue: false,
+      description: 'Add line to bottom',
+    },
+  },
   render: (args) => ({
     components: { Heading },
     setup() {
@@ -20,32 +43,30 @@ const meta = {
       </Heading>
     `,
   }),
-} satisfies Meta<typeof Heading>;
+} satisfies Meta<typeof Heading | { text: string }>;
 
 export default meta;
 
 type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
-  args: {},
+  args: {
+    color: 'white',
+  },
 };
 
 export const Black: Story = {
-  args: {
-    color: 'black',
-  },
+  args: {},
 };
 
 export const LineLeft: Story = {
   args: {
-    color: 'black',
     lineLeft: true,
   },
 };
 
 export const LineBottom: Story = {
   args: {
-    color: 'black',
     lineBottom: true,
   },
 };
