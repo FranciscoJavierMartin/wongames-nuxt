@@ -6,13 +6,9 @@ const meta = {
   title: 'Heading',
   component: Heading,
   tags: ['autodocs'],
-  args: {
-    text: 'Test',
-  },
   render: (args) => ({
     components: { Heading },
     setup() {
-      console.log(args);
       return { args };
     },
     template: `
@@ -24,11 +20,12 @@ const meta = {
 } satisfies Meta<typeof Heading>;
 
 export default meta;
+
 type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
   args: {
-    text: 'Hell',
+    text: 'Hello world',
     color: 'black',
   },
 };
