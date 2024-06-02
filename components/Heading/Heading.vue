@@ -32,7 +32,7 @@ type HeadingProps = {
 };
 
 withDefaults(defineProps<HeadingProps>(), {
-  color: 'black',
+  color: 'white',
   lineLeft: false,
   lineBottom: false,
 });
