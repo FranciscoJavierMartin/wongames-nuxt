@@ -8,6 +8,7 @@ const meta = {
   tags: ['autodocs'],
   args: {
     text: 'Hello world',
+    color: 'black',
   },
   argTypes: {
     text: {
@@ -49,14 +50,16 @@ export default meta;
 
 type Story = StoryObj<typeof meta>;
 
-export const Default: Story = {
+export const White: Story = {
   args: {
     color: 'white',
   },
 };
 
 export const Black: Story = {
-  args: {},
+  args: {
+    color: 'black',
+  },
 };
 
 export const LineLeft: Story = {
