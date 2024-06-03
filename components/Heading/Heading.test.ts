@@ -31,7 +31,7 @@ describe('<Heading/>', () => {
     });
 
     expect(screen.getByRole('heading', { name: /Hello world/i })).toHaveStyle({
-      'border-left': '0.7rem solid rgb(60 211 193/1)',
+      borderLeft: '0.7rem solid rgb(60 211 193/1)',
     });
   });
 
@@ -42,7 +42,7 @@ describe('<Heading/>', () => {
     });
 
     expect(screen.getByRole('heading', { name: /Hello world/i })).toHaveStyle({
-      'border-bottom': '0.5rem solid rgb(242 49 165/1)',
+      borderBottom: '0.5rem solid rgb(242 49 165/1)',
     });
   });
 });
