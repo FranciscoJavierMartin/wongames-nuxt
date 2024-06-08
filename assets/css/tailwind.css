@@ -68,3 +68,17 @@
       sans-serif;
   }
 }
+
+@layer components {
+  .button-with-icon {
+    @apply inline-flex items-center justify-center;
+
+    svg {
+      width: 1.5rem;
+
+      & + span {
+        margin-left: 1.2rem;
+      }
+    }
+  }
+}
