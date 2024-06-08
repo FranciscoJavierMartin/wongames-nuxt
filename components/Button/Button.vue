@@ -6,6 +6,7 @@
       'h-large px-medium text-small': size === 'medium',
       'h-[5rem] px-xlarge text-medium': size === 'large',
       'w-full': fullWidth,
+      'button-with-icon': $slots.icon,
     }"
   >
     <slot name="icon" />
