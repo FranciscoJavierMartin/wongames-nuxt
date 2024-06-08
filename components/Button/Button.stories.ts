@@ -1,5 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/vue3';
 import Button from './Button.vue';
+import AddShoppingCart from '../icons/AddShoppingCart.vue';
 
 const meta = {
   title: 'Button',
@@ -15,7 +16,7 @@ const meta = {
     },
     template: `
       <Button v-bind="args">
-        {{ args.text }}
+        <span>{{ args.text }}</span>
       </Button>
     `,
   }),
@@ -49,4 +50,24 @@ export const FullWidth: StoryObj<typeof meta> = {
   args: {
     fullWidth: true,
   },
+};
+
+export const WithIcon: StoryObj<typeof meta> = {
+  args: {},
+  render: (args) => ({
+    components: { Button, AddShoppingCart },
+    setup() {
+      return { args };
+    },
+    template: `
+      <Button v-bind="args">
+        <template #icon>
+          <AddShoppingCart />
+        </template>
+        <template #default>
+          <span>{{ args.text }}</span>
+        </template>
+      </Button>
+    `,
+  }),
 };

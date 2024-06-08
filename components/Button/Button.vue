@@ -8,6 +8,7 @@
       'w-full': fullWidth,
     }"
   >
+    <slot name="icon" />
     <slot />
   </button>
 </template>
