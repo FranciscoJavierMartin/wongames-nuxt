@@ -44,3 +44,9 @@ export const Large: StoryObj<typeof meta> = {
     size: 'large',
   },
 };
+
+export const FullWidth: StoryObj<typeof meta> = {
+  args: {
+    fullWidth: true,
+  },
+};
