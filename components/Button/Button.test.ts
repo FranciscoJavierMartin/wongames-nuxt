@@ -34,4 +34,20 @@ describe('<Button/>', () => {
       'font-size': '12px',
     });
   });
+
+  it('should render the large size', async () => {
+    render(Button, {
+      slots: {
+        default: 'Buy Now',
+      },
+      props: {
+        size: 'large',
+      },
+    });
+    expect(screen.getByRole('button', { name: /buy now/i })).toHaveStyle({
+      height: '50px',
+      // padding: '8px 48px',
+      'font-size': '16px',
+    });
+  });
 });
