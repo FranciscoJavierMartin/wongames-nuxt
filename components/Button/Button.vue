@@ -15,8 +15,6 @@
 </template>
 
 <script setup lang="ts">
-import { defineProps, withDefaults } from 'vue';
-
 type ButtonProps = {
   size?: 'small' | 'medium' | 'large';
   fullWidth?: boolean;
